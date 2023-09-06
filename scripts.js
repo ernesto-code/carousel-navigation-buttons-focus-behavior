@@ -7,6 +7,8 @@ const section2 = document.getElementById('section2')
 const dummy1 = document.getElementById('dummy-btn1')
 const dummy2 = document.getElementById('dummy-btn2')
 
+let timeoutSelect = document.getElementById('timeout')
+
 showBtn1.addEventListener('click',(evt)=>{
     showBtn1.disabled = true;
     toggleElement(section1)
@@ -19,7 +21,7 @@ showBtn2.addEventListener('click',(evt)=>{
     setTimeout(()=>{
         toggleElement(section2)
         dummy2.focus()
-    },1000)
+    },timeoutSelect.value)
 })
 
 const toggleElement = (element)=>{
