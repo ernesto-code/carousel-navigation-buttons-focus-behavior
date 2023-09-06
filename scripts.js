@@ -16,9 +16,10 @@ showBtn1.addEventListener('click',(evt)=>{
 })
 
 showBtn2.addEventListener('click',(evt)=>{
-    showBtn2.disabled = true;
+    
     
     setTimeout(()=>{
+        showBtn2.disabled = true;
         toggleElement(section2)
         dummy2.focus()
     },timeoutSelect.value)
